@@ -36,12 +36,6 @@ body, html {
   	padding: 5px; 
 }
 
-@media only screen and (max-width: 900px) {
-    .float {
-        float:none;
-    }
-}
-
 .jumbotron {
   background-image: url("../img/pipes.jpeg");
   background-size: cover;
@@ -83,6 +77,8 @@ body, html {
 
 #Contact {
 	background-image: url("../img/towel-on-wall.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #Services {
 	background-image: url("../img/vehicle-digger.jpg");
