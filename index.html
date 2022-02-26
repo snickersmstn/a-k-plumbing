@@ -7,7 +7,9 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body class="container mx-auto bg-black text-white box-border">
-    <img src="img/Logo-dark-horizontal.jpg">
+    <header>
+      <img src="img/Logo-dark-horizontal.jpg">
+    </header>
 
     <div class="py-4 text-center text-3xl">
       <h1>Get in Touch with us today</h1>
@@ -19,66 +21,68 @@
       </a>
     </div>
 
-    <div id="Services" class="p-4">
-      <h1 class="text-3xl pb-4">Services</h1>
-      <p class="pb-2">
-        The team at A&amp;K can look after all your Plumbing and Drainage need.
-      </p>
-      <p class="pb-2">
-        Check out a list of our services below:
-      </p>
-      <ul class="pb-2 list-disc list-inside">
-        <li>Plumbing Maintenance</li>
-        <li>Renovations</li>
-        <li>New Build Plumbing</li>
-        <li>Hot Water Systems</li>
-        <li>Water Tanks and Filtration</li>
-        <li>Burst pipes and leaks</li>
-        <li>Dishwasher / Washing Machine Installs</li>
-        <li>Drain Clearing and Maintenance</li>
-        <li>Storm Water Systems</li>
-        <li>Soak pits, sump and channel installations</li>
-        <li>Site Works and Excavation</li>
-      </ul>
-      <p class="pb-2">Not sure if the work you need is listed above?</p>
-      <p class="pb-2">Contact us as we may be able to assist.</p>
-    </div>
+    <main class="flex flex-col lg:flex-row flex-wrap gap-4 m-4">      
+      <div id="Services" class="order-1 lg:shrink lg:grow">
+        <h1 class="text-3xl pb-4">Services</h1>
+        <p class="pb-2">
+          The team at A&amp;K can look after all your Plumbing and Drainage need.
+        </p>
+        <p class="pb-2">
+          Check out a list of our services below:
+        </p>
+        <ul class="pb-2 list-disc list-inside">
+          <li>Plumbing Maintenance</li>
+          <li>Renovations</li>
+          <li>New Build Plumbing</li>
+          <li>Hot Water Systems</li>
+          <li>Water Tanks and Filtration</li>
+          <li>Burst pipes and leaks</li>
+          <li>Dishwasher / Washing Machine Installs</li>
+          <li>Drain Clearing and Maintenance</li>
+          <li>Storm Water Systems</li>
+          <li>Soak pits, sump and channel installations</li>
+          <li>Site Works and Excavation</li>
+        </ul>
+        <p class="pb-2">Not sure if the work you need is listed above?</p>
+        <p class="pb-2">Contact us as we may be able to assist.</p>
+      </div>
 
-    <div id="About" class="p-4">
-      <h1 class="text-3xl pb-4">About Us</h1>
-      <p>A&amp;K Plumbing and Drainage Ltd, established in 2019 is a locally owned plumbing and drainage business servicing Wairarapa and Wellington regions. Whether you have a residential, commercial, or rural plumbing problem we have the expertise to help.</p>
-      <p>Andrew is a Certifying Plumber and Tradesman Drainlayer with over 10 years experience in residential and commercial installations in the Wellington Region.</p>
-      <p>Alongside our plumbing and drainage services we also offer Site Works and Excavation services.</p>
-    </div>
+      <div id="About" class="order-2 lg:order-3">
+        <h1 class="text-3xl pb-4">About Us</h1>
+        <p>A&amp;K Plumbing and Drainage Ltd, established in 2019 is a locally owned plumbing and drainage business servicing Wairarapa and Wellington regions. Whether you have a residential, commercial, or rural plumbing problem we have the expertise to help.</p>
+        <p>Andrew is a Certifying Plumber and Tradesman Drainlayer with over 10 years experience in residential and commercial installations in the Wellington Region.</p>
+        <p>Alongside our plumbing and drainage services we also offer Site Works and Excavation services.</p>
+      </div>
 
-    <div id="Contact" class="p-4">
-      <h1 class="text-3xl pb-4">Enter your details and we will be in touch</h1>
-      <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzfPRV269DA9oaT-izIQPI-FvdvE5LttQ5gVuKmFgJ4NaDSh7a9TtzsbKWOoaHfrGI3/exec">
-          <div class="grid grid-cols-1 grid-gap-6">
-            <label class="block py-2" for="form-name">
-              <span>Name</span>
-              <input name= "name" type="text" class="form-input text-black rounded mt-1 block w-full" id="form-name" aria-describedby="emailHelp" placeholder=""/>
-            </label>
-            
-            <label class="block py-2" for="form-email">
-              <span>Email address</span>
-              <input name= "email" type="email" class="form-input text-black rounded mt-1 block w-full" id="form-email" aria-describedby="emailHelp" placeholder=""/>
-            </label>
-            
-            <label class="block py-2" for="form-phone">
-              <span>Phone number</span>
-              <input name= "phone" type="tel" class="form-input text-black rounded mt-1 block w-full" id="form-phone" placeholder=""/>
-            </label>
-            
-            <label class="block py-2" for="form-enquiry">
-              <span>Job / Project</span>
-              <textarea name="enquiry" type="text" class="form-input text-black rounded mt-1 block w-full" id="form-enquiry" placeholder="How can we help?"></textarea>
-            </label>
-            
-            <button type="submit" class="outline py-4 my-4 rounded">Send</button>
+      <div id="Contact" class="order-3 lg:order-2 lg:shrink lg:grow">
+        <h1 class="text-3xl pb-4">Enter your details and we will be in touch</h1>
+        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzfPRV269DA9oaT-izIQPI-FvdvE5LttQ5gVuKmFgJ4NaDSh7a9TtzsbKWOoaHfrGI3/exec">
+            <div class="grid grid-cols-1 grid-gap-6">
+              <label class="block py-2" for="form-name">
+                <span>Name</span>
+                <input name= "name" type="text" class="form-input text-black rounded mt-1 block w-full" id="form-name" aria-describedby="emailHelp" placeholder=""/>
+              </label>
+              
+              <label class="block py-2" for="form-email">
+                <span>Email address</span>
+                <input name= "email" type="email" class="form-input text-black rounded mt-1 block w-full" id="form-email" aria-describedby="emailHelp" placeholder=""/>
+              </label>
+              
+              <label class="block py-2" for="form-phone">
+                <span>Phone number</span>
+                <input name= "phone" type="tel" class="form-input text-black rounded mt-1 block w-full" id="form-phone" placeholder=""/>
+              </label>
+              
+              <label class="block py-2" for="form-enquiry">
+                <span>Job / Project</span>
+                <textarea name="enquiry" type="text" class="form-input text-black rounded mt-1 block w-full" id="form-enquiry" placeholder="How can we help?"></textarea>
+              </label>
+              
+              <button type="submit" class="outline py-4 my-4 rounded">Send</button>
+            </div>
           </div>
-        </div>
-      </form>
-    </div>
+        </form>
+      </div>
+    </main>
   </body>
 </html>
