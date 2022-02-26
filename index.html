@@ -1,143 +1,84 @@
 <!DOCTYPE HTML>
-<html lang = "en">
-<head>
-  <!-- basic.html -->
-  <title>A&K Plumbing</title>
-  <meta charset = "UTF-8" />
-  
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-</head>
+<html lang="en">
+  <head>
+    <title>A&amp;K Plumbing</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  </head>
+  <body class="container mx-auto bg-black text-white box-border">
+    <img src="img/Logo-dark-horizontal.jpg">
 
-<body>
+    <div class="py-4 text-center text-3xl">
+      <h1>Get in Touch with us today</h1>
+      <a href="tel:0272849144" class="block pt-8 md:pt-2 underline md:no-underline underline-offset-4">
+        027 284 9144
+      </a>
+      <a href="mailto:info@aandkplumbing.co.nz" class="block py-8 md:py-2 underline md:no-underline underline-offset-4">
+        info@aandkplumbing.co.nz
+      </a>
+    </div>
 
-	<div class= "container-fluid header">
-		<div class="row">
-			<div class="col-sm-4">
-				<img src="img/Logo-dark-horizontal.jpg">	
-			</div>
-		</div>
-	</div>
+    <div id="Services" class="p-4">
+      <h1 class="text-3xl pb-4">Services</h1>
+      <p class="pb-2">
+        The team at A&amp;K can look after all your Plumbing and Drainage need.
+      </p>
+      <p class="pb-2">
+        Check out a list of our services below:
+      </p>
+      <ul class="pb-2 list-disc list-inside">
+        <li>Plumbing Maintenance</li>
+        <li>Renovations</li>
+        <li>New Build Plumbing</li>
+        <li>Hot Water Systems</li>
+        <li>Water Tanks and Filtration</li>
+        <li>Burst pipes and leaks</li>
+        <li>Dishwasher / Washing Machine Installs</li>
+        <li>Drain Clearing and Maintenance</li>
+        <li>Storm Water Systems</li>
+        <li>Soak pits, sump and channel installations</li>
+        <li>Site Works and Excavation</li>
+      </ul>
+      <p class="pb-2">Not sure if the work you need is listed above?</p>
+      <p class="pb-2">Contact us as we may be able to assist.</p>
+    </div>
 
-	<button class="tablink" onclick="openPage('About', this, 'orange')">About Us</button>
-	<button class="tablink" onclick="openPage('Services', this, 'orange')"id="defaultOpen">Services</button>
-	<button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
+    <div id="About" class="p-4">
+      <h1 class="text-3xl pb-4">About Us</h1>
+      <p>A&amp;K Plumbing and Drainage Ltd, established in 2019 is a locally owned plumbing and drainage business servicing Wairarapa and Wellington regions. Whether you have a residential, commercial, or rural plumbing problem we have the expertise to help.</p>
+      <p>Andrew is a Certifying Plumber and Tradesman Drainlayer with over 10 years experience in residential and commercial installations in the Wellington Region.</p>
+      <p>Alongside our plumbing and drainage services we also offer Site Works and Excavation services.</p>
+    </div>
 
-
-	<div id="About" class="tabcontent">
-		<br>
-		<div class="container">
-				 <p>A & K Plumbing and Drainage Ltd, established in 2019 is a locally owned plumbing and drainage business servicing Wairarapa and Wellington regions. Whether you have a residential, commercial, or rural plumbing problem we have the expertise to help.</p>
-				 <p>Andrew is a Certifying Plumber and Tradesman Drainlayer with over 10 years experience in residential and commercial installations in the Wellington Region.</p>
-				 <p>Alongside our plumbing and drainage services we also offer Site Works and Excavation services.</p>
-			 </div>
-			 <div class="container">
-		 		<img src="img/andrew.jpg">
-		 	</div>	
-		</div>
-	</div>
-
-	<div id="Contact" class="tabcontent contact">
-	  <div id="contact-detail" class="col-sm-6">
-		  <h4>Get in Touch with us today</h4>
-		  <br>
-		  	<img src="img/phone.png"><a href="tel:0272849144"> 027 284 9144 </a>
-		  		<br>
-		  	<img src="img/email.png"><a href="mailto:info@aandkplumbing.co.nz"> info@aandkplumbing.co.nz </a>
-		  		<br>
-		  		<br>
-	  	</div>
-	 	<div id="contact-form" class="col-sm-6">
-		  	<div class="row">
-			    <div class="col-sm-8">
-			     <form id=gform method="POST" action="https://script.google.com/macros/s/AKfycbzfPRV269DA9oaT-izIQPI-FvdvE5LttQ5gVuKmFgJ4NaDSh7a9TtzsbKWOoaHfrGI3/exec">
-			  	  <h6>Enter your details and we will be in touch</h6>
-			  	  <br>
-			  	<div class="form-group">
-			      <div id="form-name" class="col-auto">
-			       <label for="exampleInputEmail1">Name</label>
-			       <input name= "name" type="text" class="form-control" id="form-name" aria-describedby="emailHelp" placeholder="">
-			    </div>
-			    <br>
-			    <div id="form-email" class="col-auto">
-			     <label for="exampleInputEmail1">Email address</label>
-			     <input name= "email" type="email" class="form-control" id="form-email" aria-describedby="emailHelp" placeholder="">
-			    </div>
-			    <br>
-			    <div id="form-phone" class="col-auto">
-			     <label for="exampleInputEmail1">Phone</label>
-			     <input name= "phone" type="tel" class="form-control" id="form-phone" placeholder="">
-			    </div>
-			    <br>
-			    <div id="form-enquiry" class="col-auto">
-			     <label for="exampleInputEmail1">Job / Project</label>
-			     <input name="enquiry" type="text" class="form-control" id="form-enquiry" placeholder="How can we help?">
-			    </div>
-			    <br>
-			    <div class="col-auto my-1">
-			      <button type="submit" class="btn btn-primary">Send</button>
-			    </div>
-			 </div>
-		    </div>
-		  </form>
-		  </div>
-		</div>
-	</div>
-
-	 </div> 
-
-	<div id="Services" class="tabcontent">
-			<div class="row">
-				<div id="plumbing" class="col-sm-8">
-					  <p> The team at A&K can look after all your Plumbing and Drainage need.<br> 
-					  	Check out a list of our services below:
-							<ul>
-								<li>Plumbing Maintenance</li>
-								<li>Renovations</li>
-								<li>New Build Plumbing</li>
-								<li>Hot Water Systems</li>
-								<li>Water Tanks and Filtration</li>
-								<li>Burst pipes and leaks</li>
-								<li>Dishwasher / Washing Machine Installs</li>
-								<li>Drain Clearing and Maintenance</li>
-								<li>Storm Water Systems</li>
-								<li>Soak pits, sump and channel installations</li>
-								<li>Site Works and Excavation</li>
-							</ul>
-						</p>
-					<p>Not sure if the work you need is listed above?</p>	
-					<p>Contact us as we may be able to assist.</p>	
-				</div>	  	
-	</div>
-
-			<script type="text/javascript">
-			function openPage(pageName, elmnt, color) {
-			  // Hide all elements with class="tabcontent" by default */
-			  var i, tabcontent, tablinks;
-			  tabcontent = document.getElementsByClassName("tabcontent");
-			  for (i = 0; i < tabcontent.length; i++) {
-			    tabcontent[i].style.display = "none";
-			  }
-
-			  // Remove the background color of all tablinks/buttons
-			  tablinks = document.getElementsByClassName("tablink");
-			  for (i = 0; i < tablinks.length; i++) {
-			    tablinks[i].style.backgroundColor = "";
-			  }
-
-			  // Show the specific tab content
-			  document.getElementById(pageName).style.display = "block";
-
-			  // Add the specific color to the button used to open the tab content
-			  elmnt.style.backgroundColor = color;
-			}
-
-			// Get the element with id="defaultOpen" and click on it
-			document.getElementById("defaultOpen").click();
-			</script>
-
-			<script data-cfasync="false" type="text/javascript"
-				src="javascript/form-post-display.js"></script>
-	</body>
+    <div id="Contact" class="p-4">
+      <h1 class="text-3xl pb-4">Enter your details and we will be in touch</h1>
+      <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzfPRV269DA9oaT-izIQPI-FvdvE5LttQ5gVuKmFgJ4NaDSh7a9TtzsbKWOoaHfrGI3/exec">
+          <div class="grid grid-cols-1 grid-gap-6">
+            <label class="block py-2" for="form-name">
+              <span>Name</span>
+              <input name= "name" type="text" class="form-input text-black rounded mt-1 block w-full" id="form-name" aria-describedby="emailHelp" placeholder=""/>
+            </label>
+            
+            <label class="block py-2" for="form-email">
+              <span>Email address</span>
+              <input name= "email" type="email" class="form-input text-black rounded mt-1 block w-full" id="form-email" aria-describedby="emailHelp" placeholder=""/>
+            </label>
+            
+            <label class="block py-2" for="form-phone">
+              <span>Phone number</span>
+              <input name= "phone" type="tel" class="form-input text-black rounded mt-1 block w-full" id="form-phone" placeholder=""/>
+            </label>
+            
+            <label class="block py-2" for="form-enquiry">
+              <span>Job / Project</span>
+              <textarea name="enquiry" type="text" class="form-input text-black rounded mt-1 block w-full" id="form-enquiry" placeholder="How can we help?"></textarea>
+            </label>
+            
+            <button type="submit" class="outline py-4 my-4 rounded">Send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
