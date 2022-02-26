@@ -13,16 +13,32 @@
 
     <div class="py-4 text-center text-3xl">
       <h1>Get in Touch with us today</h1>
-      <a href="tel:0272849144" class="block pt-8 md:pt-2 underline md:no-underline underline-offset-4">
+      <a href="tel:0272849144" class="
+        inline-block
+        rounded
+        p-4
+        mt-4
+        bg-amber-500 
+
+        md:bg-inherit
+        md:p-0
+        md:text-xl
+      ">
         027 284 9144
       </a>
-      <a href="mailto:info@aandkplumbing.co.nz" class="block py-8 md:py-2 underline md:no-underline underline-offset-4">
+      <a href="mailto:info@aandkplumbing.co.nz" class="
+        block
+        mt-4
+        underline
+        underline-offset-4
+        md:text-xl
+      ">
         info@aandkplumbing.co.nz
       </a>
     </div>
 
-    <main class="flex flex-col lg:flex-row flex-wrap gap-4 m-4">      
-      <div id="Services" class="order-1 lg:shrink lg:grow">
+    <main class="flex flex-col xl:flex-row flex-wrap gap-4 m-4">      
+      <div id="Services" class="order-1 xl:shrink xl:grow">
         <h1 class="text-3xl pb-4">Services</h1>
         <p class="pb-2">
           The team at A&amp;K can look after all your Plumbing and Drainage need.
@@ -47,38 +63,38 @@
         <p class="pb-2">Contact us as we may be able to assist.</p>
       </div>
 
-      <div id="About" class="order-2 lg:order-3">
+      <div id="About" class="order-2 xl:order-3">
         <h1 class="text-3xl pb-4">About Us</h1>
         <p>A&amp;K Plumbing and Drainage Ltd, established in 2019 is a locally owned plumbing and drainage business servicing Wairarapa and Wellington regions. Whether you have a residential, commercial, or rural plumbing problem we have the expertise to help.</p>
         <p>Andrew is a Certifying Plumber and Tradesman Drainlayer with over 10 years experience in residential and commercial installations in the Wellington Region.</p>
         <p>Alongside our plumbing and drainage services we also offer Site Works and Excavation services.</p>
       </div>
 
-      <div id="Contact" class="order-3 lg:order-2 lg:shrink lg:grow">
+      <div id="Contact" class="order-3 xl:order-2 xl:shrink xl:grow">
         <h1 class="text-3xl pb-4">Enter your details and we will be in touch</h1>
         <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzfPRV269DA9oaT-izIQPI-FvdvE5LttQ5gVuKmFgJ4NaDSh7a9TtzsbKWOoaHfrGI3/exec">
             <div class="grid grid-cols-1 grid-gap-6">
               <label class="block py-2" for="form-name">
                 <span>Name</span>
-                <input name= "name" type="text" class="form-input text-black rounded mt-1 block w-full" id="form-name" aria-describedby="emailHelp" placeholder=""/>
+                <input name= "name" type="text" class="form-input text-black rounded mt-1 p-2 block w-full" id="form-name" aria-describedby="emailHelp" placeholder=""/>
               </label>
               
               <label class="block py-2" for="form-email">
                 <span>Email address</span>
-                <input name= "email" type="email" class="form-input text-black rounded mt-1 block w-full" id="form-email" aria-describedby="emailHelp" placeholder=""/>
+                <input name= "email" type="email" class="form-input text-black rounded mt-1 p-2 block w-full" id="form-email" aria-describedby="emailHelp" placeholder=""/>
               </label>
               
               <label class="block py-2" for="form-phone">
                 <span>Phone number</span>
-                <input name= "phone" type="tel" class="form-input text-black rounded mt-1 block w-full" id="form-phone" placeholder=""/>
+                <input name= "phone" type="tel" class="form-input text-black rounded mt-1 p-2 block w-full" id="form-phone" placeholder=""/>
               </label>
               
               <label class="block py-2" for="form-enquiry">
                 <span>Job / Project</span>
-                <textarea name="enquiry" type="text" class="form-input text-black rounded mt-1 block w-full" id="form-enquiry" placeholder="How can we help?"></textarea>
+                <textarea name="enquiry" type="text" class="form-input text-black rounded mt-1 p-2 block w-full" id="form-enquiry" placeholder="How can we help?" rows="4"></textarea>
               </label>
               
-              <button type="submit" class="outline py-4 my-4 rounded">Send</button>
+              <button type="submit" class="bg-amber-500 py-4 my-4 rounded">Send</button>
             </div>
           </div>
         </form>
