@@ -3,8 +3,8 @@
   <head>
     <title>A&amp;K Plumbing</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="css/main.css" rel="stylesheet"/>
   </head>
   <body class="container mx-auto bg-black text-white box-border">
     <header>
@@ -13,26 +13,10 @@
 
     <div class="py-4 text-center text-3xl">
       <h1>Get in Touch with us today</h1>
-      <a href="tel:0272849144" class="
-        inline-block
-        rounded
-        p-4
-        mt-4
-        bg-amber-500 
-
-        md:bg-inherit
-        md:p-0
-        md:text-xl
-      ">
+      <a href="tel:0272849144" class="inline-block rounded p-4 mt-4 bg-amber-500 md:bg-inherit md:p-0 md:text-xl">
         027 284 9144
       </a>
-      <a href="mailto:info@aandkplumbing.co.nz" class="
-        block
-        mt-4
-        underline
-        underline-offset-4
-        md:text-xl
-      ">
+      <a href="mailto:info@aandkplumbing.co.nz" class="block mt-4 underline underline-offset-4 md:text-xl">
         info@aandkplumbing.co.nz
       </a>
     </div>
@@ -72,7 +56,7 @@
 
       <div id="Contact" class="order-3 xl:order-2 xl:shrink xl:grow">
         <h1 class="text-3xl pb-4">Enter your details and we will be in touch</h1>
-        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzfPRV269DA9oaT-izIQPI-FvdvE5LttQ5gVuKmFgJ4NaDSh7a9TtzsbKWOoaHfrGI3/exec">
+        <form id="quote-form" method="POST" action="https://script.google.com/macros/s/AKfycbzfPRV269DA9oaT-izIQPI-FvdvE5LttQ5gVuKmFgJ4NaDSh7a9TtzsbKWOoaHfrGI3/exec">
             <div class="grid grid-cols-1 grid-gap-6">
               <label class="block py-2" for="form-name">
                 <span>Name</span>
@@ -98,6 +82,27 @@
             </div>
           </div>
         </form>
+        <script>
+          window.addEventListener("load", function() {
+            const form = document.getElementById("quote-form");
+            const thankYou = document.getElementById("thank-you");
+            form.addEventListener("submit", function(e) {
+              e.preventDefault();
+              const data = new FormData(form);
+              const action = e.target.action;
+              fetch(action, {
+                method: 'POST',
+                body: data,
+              })
+              .then(() => {
+                window.alert("Thank you, we will be in touch soon.")
+              })
+              .catch((e) => {
+                window.alert("Oops, that didn't work as we expected. Give us a call.")
+              })
+            });
+          });
+        </script>
       </div>
     </main>
   </body>
