@@ -77,7 +77,7 @@
 
               <label class="block py-2" for="form-address">
                 <span>Address</span>
-                <input name= "address" type="text" class="form-input text-black rounded mt-1 p-2 block w-full" id="form-address" placeholder=""/>
+                <input name= "address" type="text" class="form-input text-black rounded mt-1 p-2 block w-full" id="form-address" autocomplete="disable-autocomplete" placeholder=""/>
               </label>
               
               <label class="block py-2" for="form-enquiry">
@@ -90,7 +90,35 @@
           </div>
         </form>
         <script>
-          window.addEventListener("load", function() {
+          (function() {
+            var widget, initAddressFinder = function() {
+                widget = new AddressFinder.Widget(
+                    document.getElementById('form-address'),
+                    'VGBKH7U364LAJDXRTQP8',
+                    'NZ', {
+                        "address_params": {
+                            "post_box": "0",
+                            "region_code": "F"
+                        },
+                        "empty_content": "No addresses were found. This could be a new address, or you may need to check the spelling."
+                    }
+                );
+
+                widget.on('address:select', function(fullAddress, metaData) {
+                    document.getElementById('form-address').value = fullAddress;
+                });
+            };
+
+            function downloadAddressFinder() {
+                var script = document.createElement('script');
+                script.src = 'https://api.addressfinder.io/assets/v3/widget.js';
+                script.async = true;
+                script.onload = initAddressFinder;
+                document.body.appendChild(script);
+            };
+
+            document.addEventListener('DOMContentLoaded', downloadAddressFinder);
+
             const form = document.getElementById("quote-form");
             const thankYou = document.getElementById("thank-you");
             form.addEventListener("submit", function(e) {
@@ -108,7 +136,7 @@
                 window.alert("Oops, that didn't work as we expected. Give us a call.")
               })
             });
-          });
+          })();
         </script>
       </div>
     </main>
