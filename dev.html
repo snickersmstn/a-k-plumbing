@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="css/main.css" rel="stylesheet"/>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body class="container mx-auto bg-black text-white box-border">
     <header class="grid gap-8 m-4 md:grid-cols-2">
@@ -84,7 +85,14 @@
                 <span>Job / Project</span>
                 <textarea name="enquiry" type="text" class="form-input text-black rounded mt-1 p-2 block w-full" id="form-enquiry" placeholder="How can we help?" rows="4"></textarea>
               </label>
-              
+
+              <label class="block py-2" for="recaptcha">
+                <form action="?" method="POST">
+                  <div class="g-recaptcha" data-sitekey="6LcO6xIgAAAAACemh4HkQMc044gc3Q9i9PdL7uke"></div>
+                  <input type="submit" value="I'm not a robot">
+                </form>
+              </label>
+
               <button type="submit" class="bg-amber-500 py-4 my-4 rounded">Send</button>
             </div>
           </div>
